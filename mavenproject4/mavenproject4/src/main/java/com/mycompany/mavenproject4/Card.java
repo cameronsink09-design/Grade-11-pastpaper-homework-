@@ -7,10 +7,10 @@ import javax.swing.*;
  */
 public class Card {
 
-private static String name;
-private static int health ; 
-private static int magic  ; 
-private static String inventory;
+private String name;
+private int health ; 
+private int magic  ; 
+private String inventory;
 
 
  
@@ -27,12 +27,12 @@ private static String inventory;
    public Card (String name) { 
      
        this.name = name; 
-   
+        
 
        
-    health = (int) (Math.random() * 50) + 1 ;
+    health = (int) (Math.random() * 40) + 10 ;
     
-    magic  = (int) (Math.random() * 40) + 1; 
+    magic  = (int) (Math.random() * 20) + 20; 
     
     
     
@@ -44,12 +44,15 @@ private static String inventory;
     
     String [] magic = {"potion" , "chant" , "lamp"} ; 
     
-       
-    swords = (int) (Math.random() * 5) + 1 ;
+    int RandSword = (int) (Math.random() * 6) ; 
+    System.out.println(swords[RandSword]);
+   
     
-    healing = (int) (Math.random() * 3) + 1 ;
+    int RandHealing = (int) (Math.random() * 4) ; 
+    System.out.println(healing[RandHealing]);
     
-    magic = (int) (Math.random() * 3) + 1 ;
+   int randMagic = (int) (Math.random() * 4) ; 
+    System.out.println(magic[randMagic]);
     
     
     

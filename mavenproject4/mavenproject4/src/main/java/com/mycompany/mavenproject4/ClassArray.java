@@ -11,7 +11,7 @@ public class ClassArray {
     
  
 private int size ; 
-private Card[] cardArr = new Card [20] ; 
+private String [] cardArr = new String [20] ; 
     
     
     
@@ -20,7 +20,19 @@ public ClassArray () {
     try { 
     Scanner scFile = new Scanner (new File("Characters.txt")) ; 
     
-    
+    while (scFile.hasNextLine()) { 
+        
+         String Line = scFile.nextLine() ; 
+        
+         for (int i = 0  ; i < 19 ; i++) { 
+             
+           cardArr [i] = Line  ;  
+         }
+             
+             
+         
+    } 
+
     
     scFile.close();
     
@@ -73,16 +85,21 @@ public ClassArray () {
     
     public Card playGame () { 
     
+    }    
+        
+     
+       
         
         
         
         
         
         
-        
-        
-        
-}
-
+    
+    
+    
+    
+    
+    
 } 
 
